@@ -44,9 +44,15 @@
 
   --button: bold 0.875rem var(--font-family-base);
   --link: 500 0.875rem var(--font-family-base);
-  --tag: bold 0.625rem var(--font-family-base); /*colocar uppercase e letter spacing*/
+  --tag: bold 0.625rem var(--font-family-base); /*colocar uppercase e letter spacing numa classe, não aceita como variável*/
 }
 
 p {
   font: var(--tag);
+}
+
+.tag {
+  font: var(--tag);
+  text-transform: uppercase;
+  letter-spacing: 0.05rem;
 }
