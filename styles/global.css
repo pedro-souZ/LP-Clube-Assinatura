@@ -1,0 +1,52 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+:root {
+  /* cores */
+  --pink-light: #c59dd2;
+  --pink-base: #9547a5;
+  --pink-dark: #7d298a;
+  --pink-low: #3f0f41;
+
+  --blue-light: #73b6d2;
+  --blue-base: #358bb9;
+  --blue-mid: #2374a4;
+  --blue-dark: #144a72;
+  --blue-low: #08233c;
+
+  --shape-stroke: #002347;
+  --shape-hover: #001933;
+  --shape-base: #000f1f;
+  --shape-background: #00050a;
+
+  --text-title: #f8fbfb;
+  --text-body: #e2e7e9;
+  --text-label: #bac6c9;
+
+  /* tipografias */
+
+  --font-family-base: "Raleway", serif;
+
+  --title-lg: bold 3rem var(--font-family-base);
+  --title-md: bold 2.5rem var(--font-family-base);
+  --title-sm: bold 2rem var(--font-family-base);
+  --title-xs: bold 1rem var(--font-family-base);
+
+  --subtitle: 500 2rem /200% var(--font-family-base);
+
+  --body-lg: 1.25rem/140% var(--font-family-base);
+  --body-md: 1rem/140% var(--font-family-base);
+  --body-sm: 0.875rem / 140% var(--font-family-base);
+  --body-xs: 0.75rem / 140% var(--font-family-base);
+
+  --button: bold 0.875rem var(--font-family-base);
+  --link: 500 0.875rem var(--font-family-base);
+  --tag: bold 0.625rem var(--font-family-base); /*colocar uppercase e letter spacing*/
+}
+
+p {
+  font: var(--tag);
+}
