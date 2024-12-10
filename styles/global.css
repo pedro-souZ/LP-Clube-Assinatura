@@ -48,7 +48,7 @@
 }
 
 p {
-  font: var(--tag);
+  font: var(--link);
 }
 
 .tag {
