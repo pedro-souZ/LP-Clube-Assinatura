@@ -47,12 +47,100 @@
   --tag: bold 0.625rem var(--font-family-base); /*colocar uppercase e letter spacing numa classe, não aceita como variável*/
 }
 
-p {
-  font: var(--link);
-}
-
 .tag {
   font: var(--tag);
   text-transform: uppercase;
   letter-spacing: 0.05rem;
+  color: var(--blue-light);
+
+  &:hover {
+    color: var(--text-body);
+  }
 }
+
+.button-primary-default {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 8px;
+  border: 1px solid;
+  text-decoration: none;
+  padding: 20px;
+
+  max-width: 78px;
+  max-height: 40px;
+
+  background-color: var(--pink-dark);
+  color: var(--text-title);
+  font: var(--button);
+
+  &:hover {
+    background-color: var(--pink-base);
+    border: 1px solid var(--pink-base);
+  }
+}
+
+.button-secondary {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 8px;
+  border: 1px solid;
+  text-decoration: none;
+  padding: 20px;
+
+  max-width: 78px;
+  max-height: 40px;
+
+  background-color: var(--blue-dark);
+  color: var(--text-title);
+  font: var(--button);
+
+  &:hover {
+    background-color: var(--blue-mid);
+    border: 1px solid var(--blue-mid);
+  }
+}
+
+/* .social-links {
+  display: flex;
+  align-items: center;
+
+  & a {
+    width: 2.5rem;
+    height: 2.5rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 5rem;
+
+    position: relative;
+
+    &:hover::before {
+      scale: 1;
+    }
+
+    &::before {
+      content: "";
+
+      width: inherit;
+      height: inherit;
+      border-radius: inherit;
+
+      background: var(--shape-stroke);
+
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+
+      scale: 0;
+    }
+  }
+} */
